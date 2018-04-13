@@ -1,0 +1,166 @@
+html,body{
+    margin: 0px;
+    overflow-x: hidden; 
+}
+#top{
+    background-color:#e6eeff;
+    width: 100%;
+    position: fixed;
+}
+#logo{
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    padding-right: 110px;
+    float: left;
+}
+#quote{
+	color: #001a4d;
+}
+
+#title{
+    padding-top: 50px;
+    margin: 0px;
+    padding-bottom: 33px;
+    color: #001a4d;
+}
+
+#content{
+    padding-top: 141px;
+}
+
+#navigationbar {
+    position: fixed;
+    list-style-type:none;
+    width: 200px;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    border:0;
+    background-color: paleturquoise;
+    clear: both;
+}
+
+#navigationbar a{
+    display: block;
+    color: #000;
+    padding: 12px 18px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #e6eeff;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    margin-left: 775px;
+    position: relative;
+}
+
+#faculty{
+    text-decoration: none;
+}
+
+#creators {
+    padding-left: 50px;
+}
+
+
+.description{
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin-left: 10px;
+    padding-left: 200px;
+    vertical-align:top;
+}
+
+.left-line{
+	padding: 14px;
+	border-left-style: solid;
+	border-left-color: black;
+	border-left-width: 2px;
+	height: 415px;
+}
+
+.coursematerial{
+    width: 164px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0%;
+    background-color: powderblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #e6eeff}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.horizontal-line
+{
+	width: 1400px;
+	height: 2px;
+	background-color: black;
+	margin: 0px;
+	padding: 0px;
+}
+
+.vertical-line
+{
+
+	border-right-style: solid;
+	border-right-color: black;
+
+}
+.clear
+{
+	/*clears all floats below*/
+	clear:both;
+}
+
+.left_text
+{
+    display: inline-block;
+    width: 400px;
+    vertical-align: top;
+}
+.left-line h3{
+    margin: 0;
+}
+
+.newimg
+{
+	/*shrink dimensions*/
+	width:100px;
+	height:100px;
+	margin: 15px;
+}
+
+#images{
+    padding-left: 200px;
+}
+

@@ -1,0 +1,53 @@
+h3
+{
+    text-align: center;
+}
+button
+{
+    text-align: center;
+    position: absolute;
+    left: 47%;
+    transform: translate(0px, -20px);
+
+}
+
+.modal, .modal2, .modal3, .modal4, .modal5 {
+    display: none;
+    position: fixed; 
+
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(1,1,1); 
+    background-color: rgba(0,0,0,0.6); /*darken background*/    
+    left: 0;
+    top: 0;
+}
+
+/* Modal Content/Box */
+.modal-content,.modal-content2,.modal-content3,.modal-content4,.modal-content5 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: auto;
+}
+
+/* The Close Button */
+.close {
+    color: red;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: darkgrey;
+    cursor: pointer;
+    font-style: oblique;
+} 
+footer {
+    position: absolute;
+}

@@ -1,0 +1,15 @@
+body
+{
+	margin: 0px;
+}
+
+.title1
+{
+	display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin-left: 10px;
+    padding-left: 200px;
+    vertical-align:top;
+    font-size: 135%;
+}

@@ -1,0 +1,51 @@
+body{
+    margin: 0px;
+}
+
+#heading
+{
+    font-size: 200%;
+    text-align: center;
+}
+
+#materials{
+    padding-left: 200px;
+}
+h2
+{
+    text-align:center;
+    display:inline-block;
+    padding-left: 320px;
+}
+
+.button1
+{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  background-color: lightskyblue;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 8.5px darkcyan;
+  text-shadow: 0 1px black;
+  margin: 30px;
+  width: 30%;
+}
+
+.button1:hover 
+{
+    background-color: cyan;
+}
+
+.button1:active {
+  background-color: cyan;
+  color: darkgrey;
+  box-shadow: 0 6px #666;
+  transform: translateY(5px);
+}
+footer{
+    position: absolute;
+}

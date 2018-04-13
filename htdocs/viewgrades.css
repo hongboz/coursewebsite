@@ -1,0 +1,25 @@
+.column
+{
+	position: absolute; 
+	z-index: -1; 
+	width: 80%;
+	height: auto;
+
+
+}
+.gradeheader
+{
+	display: inline-block;
+	width: 300%; 
+
+}
+
+.grades
+{
+	position: absolute;
+	transform:translate(0px, -1px);
+	z-index: -1; 
+	width: 50%;
+	left: 9%;
+
+}

@@ -1,0 +1,66 @@
+body
+{
+	margin: 0px;
+}
+h2
+{
+	font-size: 200%;
+}
+h3{
+  padding-left: 15px;
+}
+.title1
+{
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin-left: 10px;
+    padding-left: 500px;
+    vertical-align:top;
+    font-size: 135%;
+    
+}
+.button
+{
+  display: inline-block;
+  border-radius: 2.5px;
+  background-color: lightskyblue;
+  border: none;
+  color: grey;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 0px 2px 1.5px 2px darkgrey;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+
+.button span:after{
+  content: "\2713";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+  color:black;
+}
+
+.button:hover span {
+  padding-right: 25px;
+  color:black;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+

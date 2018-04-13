@@ -1,0 +1,106 @@
+<?php
+  session_start();
+  if(!isset($_SESSION['userType'])){
+      header("location:index.php");
+   }
+?>
+<html>
+<head>
+<link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+
+<div id ="top">
+  <!--UTSC logo taken from www.utsc.utoronto.ca-->
+  <img id ="logo" src="http://www.utsc.utoronto.ca/~sdamouras/pics/UTSC%20logo.png" alt=" UTSC Logo">
+  <h1 id="title"> Welcome to CSCB20 - Intro. to Databases and Web Applications </h1>
+  <i><div id="quote">"What separates design from art is that design is meant to be... functional." - Cameron Moll</div></i>
+</div>
+<div id="content">
+  <ul id="navigationbar">
+    <li><a href="homepage.php"> Home </a></li>
+    <div class="dropdown">
+    <li><a class="coursematerial" href="coursematerialspage.php"> Course Materials </a></li>
+        <div class="dropdown-content">
+          <a href="syllabus.php">Syllabus</a>
+          <a href="lectureslides.php">Weekly Lecture Slides</a>
+          <a href="assignments.php">Assignments</a>
+          <a href="courselabs.php">Labs</a>
+          <a href="practicequizzes.php">Practice Quizzes</a>
+          <a href="schedule.php">Schedule</a>
+
+        </div>
+    </div>
+    <li><a href="announcements.php"> Announcements </a></li>
+    <li><a href="courseteam.php"> Course Team </a></li>
+    <div class="dropdown">
+    <li><a class="coursematerial" href="usefullinks.php"> Useful Links </a></li>
+      <div class="dropdown-content">
+        <a href="https://piazza.com/class/jcpjjp5l4bywd"> Piazza </a>
+        <a href="https://portal.utoronto.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_12_1">Portal</a>
+        <a href="https://markus.utsc.utoronto.ca/cscb20w18/?locale=en"> MarkUs </a>
+        <a href="http://www.utsc.utoronto.ca/labs/"> UTSC Labs </a>
+
+      </div>
+    </div>
+
+
+    <li><a href="otherresourcespage.php"> Other Resources </a></li>
+    <?php
+      if($_SESSION['userType'] == 'Student')
+      {
+        echo "<li><a href=\"viewmarks.php\"> View Marks </a></li>";
+        echo "<li><a href=\"feedbackpage.php\"> Give Feedback </a></li>";
+      }
+      elseif($_SESSION['userType'] == 'Instructor')
+      {
+        echo "<li><a href=\"entermarks.php\"> Enter Marks </a></li>";
+        echo "<li><a href=\"viewfeedback.php\"> View Feedback </a></li>";
+        echo "<li><a href=\"viewgrades.php\"> View Grades </a></li>";
+        echo "<li><a href=\"remarkrequests.php\"> Remark Requests </a></li>";
+      }
+      else
+      {
+        echo "<li><a href=\"entermarks.php\"> Enter Marks </a></li>";
+        echo "<li><a href=\"remarkrequests.php\"> Remark Requests </a></li>";
+      }
+    ?>
+    <li><a href="logout.php"> Log Out </a></li>
+  </ul>
+  </br></br>
+  <div class=horizontal-line> </div>
+  <div class=description>
+
+  <h3>Course Description</h3>
+  
+  A practical introduction to databases and Web app development. Databases: terminology and applications; creating, querying and updating databases; the entity-relationship model for database design. Web documents and applications: static and interactive documents; Web servers and dynamic server-generated content; Web application development and interface with databases.
+  </br></br>
+  Prerequisite: Some experience with programming in an imperative language such as Python, Java or C.
+  </br></br>
+  Exclusion: This course may not be taken after - or concurrently with - any C- or D-level CSC course.
+  </div>
+    <div class=description> <div class=left-line>
+    <h3>Instructor Information</h3>
+    </br>Instructor: Abbas Attarwala
+    </br>Lecture: Mondays 9am to 11am in SW319
+    </br>Tutorials: Check under Schedule
+    </br>Email: abbas.attarwala@utoronto.ca
+    </br>Class Website: Blackboard Portal
+  </div>
+  </div>
+  <!-- image recieved from image.freepik.com-->
+  <!-- image recieved from n6-img-fp.akamaized.net-->
+  <!-- image recieved from converdiant.com-->
+  <div id="images">
+  <img class=newimg src="https://image.freepik.com/free-icon/html-file-with-code-symbol_318-45756.jpg"></img>
+  <img class=newimg src="https://n6-img-fp.akamaized.net/free-icon/css-file-format-with-brackets_318-45223.jpg?size=338&ext=jpg"></img>
+  <img class=newimg src="https://converdiant.com/img/Links/java.png"></img>
+</div>
+</div>
+</br></br></br>
+<footer>
+  <span> <a id="faculty" href="http://www.utsc.utoronto.ca/cms/faculty-of-computer-science"> UTSC Computer Science Faculty</a> </span>
+  <span id="creators"> Created By: Hongbo Zhang and Kevin Liu </span>
+</footer>
+</body>
+</html>

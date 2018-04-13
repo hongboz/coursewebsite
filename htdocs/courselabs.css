@@ -1,0 +1,159 @@
+/*css code here*/
+/*set CSS styles here */
+/*default body, headings, paragraphs*/
+body
+{
+	margin: 0px;
+
+} /*default body style*/
+
+#menu{
+	padding-left: 200px;
+}
+
+h2{
+	padding-left: 490px;
+}
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0%;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+.base
+{
+	display: block;
+	width: 645px;
+	height: 450px;
+	border-style: solid;
+	border-color: black;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: lightblue;
+}
+.dropdown1
+{
+	display: block;
+	background-color: lightseagreen;
+	color: black;
+	padding: 14px;
+	border: none;
+	font-size: 15px;
+	cursor: pointer;
+	border-style: solid;
+}
+/*display list when mouse is over the button and for as long as labs is open*/
+.dropdown:hover .labs 
+{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.dropmenu
+{
+	position:relative;
+	display:inline-block;
+	left:38%;
+	padding-left: 50px;
+
+
+}
+.dropmenu:hover .dropdown
+{
+	background-color: darkcyan;
+	border-style: inset;
+	border-color: lightgrey;
+	box-shadow: 0.5px 0.5px 0.4px 0.1px;
+}
+.dropmenu:hover .labs
+{
+	/*display list on hover*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.labs a:active
+{
+	/*change outline when clicked and takes to URL*/
+	display: block;
+	border-style: inset 8px;
+	border: white 5px;
+}
+.labs
+{
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 160px;
+	z-index: 1;
+	margin-left: auto;
+	margin-right: auto;
+}
+.labs a /*items in the list*/
+{
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 0.5px grey;
+}
+.labs a:hover
+{
+	background-color: black;
+	color: white;
+}
+
+#text.para
+{
+	text-align: center;
+	font-size: 19px;
+}
+/* dividers */
+.horizontal-line
+{
+	width: 153500px;
+	height: 2px;
+	background-color: black;
+	margin: 0px;
+	padding: 0px;
+}
+
+.vertical-line
+{
+	width: 2px;
+	height: 1100px;
+	background-color: black;
+	margin:0px;
+	padding:0px;
+}
+
+footer{
+	position: absolute;
+}

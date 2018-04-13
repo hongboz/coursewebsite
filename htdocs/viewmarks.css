@@ -1,0 +1,57 @@
+.divTable{
+	display: table;
+	width: 100%;
+}
+
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: cyan;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	border: 1px solid lightskyblue;
+	display: table-cell;
+	padding: 3px 8px;
+}
+.divTableHeading {
+	background-color: cyan;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: cyan;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+.reference
+{
+	position: relative; 
+	left:110%;
+	transform:translate(0px, -79.79%);
+	width: 80%;
+	height: auto;
+}
+.submit_reference
+{
+	position:relative;
+	text-align: center;
+}
+
+textarea{
+	resize: none;
+}
+button
+{
+	background-color: #20B2AA;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 117%;
+}

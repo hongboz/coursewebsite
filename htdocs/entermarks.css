@@ -1,0 +1,9 @@
+html,body{
+    margin: 0px;
+    overflow-x: hidden; 
+}
+.spin_off::-webkit-inner-spin-button, .spin_off::-webkit-outer-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+    -moz-appearance:textfield !important;
+}

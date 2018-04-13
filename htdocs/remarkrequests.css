@@ -1,0 +1,25 @@
+footer{
+	position: absolute;
+}
+h2
+{
+	position:relative;
+    text-align: center;
+    font-family: Helvetica;
+    color: darkblue;
+}
+h3
+{
+	position:absolute;
+	transform:translate(0px, -25px);
+	left: 20%;
+}
+p
+{
+	position:absolute;
+	left: 20%;
+	transform:translate(0px, 15px);
+	border-style: dotted;
+	width: 70%;
+	height: auto;
+}

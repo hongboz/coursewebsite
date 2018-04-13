@@ -1,0 +1,19 @@
+body
+{
+	margin: 0px;
+
+}
+h2
+{
+	text-align: center;
+	font-size: 250%;
+}
+h3
+{
+	text-align: center;
+	font-size: 100%;
+}
+
+footer{
+	position: absolute;
+}
